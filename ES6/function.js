@@ -50,46 +50,60 @@
 // const output=arrow(20, 30);
 // console.log(output);
 
-const products = [
-        {
-            id: 1,
-            name: "Smartphone",
-            brand: "Samsung",
-            color: "Black",
-            model: "Galaxy S23"
-        },
-        {
-            id: 2,
-            name: "Laptop",
-            brand: "Dell",
-            color: "Silver",
-            model: "XPS 13"
-        },
-        {
-            id: 3,
-            name: "Headphones",
-            brand: "Sony",
-            color: "Black",
-            model: "WH-1000XM5"
-        },
-        {
-            id: 4,
-            name: "Smartwatch",
-            brand: "Apple",
-            color: "Space Gray",
-            model: "Series 9"
-        },
-        {
-            id: 5,
-            name: "Tablet",
-            brand: "Lenovo",
-            color: "Blue",
-            model: "Tab P11"
-        }
-        ];
-const result=products.find(pd=>pd.id==3);
-console.log(result);
-const results=products.filter(pd=>pd.color=="Black");
-console.log(...results);
-const map=products.map(pd=>pd.id*5);
-console.log(map);
+// const products = [
+//         {
+//             id: 1,
+//             name: "Smartphone",
+//             brand: "Samsung",
+//             color: "Black",
+//             model: "Galaxy S23"
+//         },
+//         {
+//             id: 2,
+//             name: "Laptop",
+//             brand: "Dell",
+//             color: "Silver",
+//             model: "XPS 13"
+//         },
+//         {
+//             id: 3,
+//             name: "Headphones",
+//             brand: "Sony",
+//             color: "Black",
+//             model: "WH-1000XM5"
+//         },
+//         {
+//             id: 4,
+//             name: "Smartwatch",
+//             brand: "Apple",
+//             color: "Space Gray",
+//             model: "Series 9"
+//         },
+//         {
+//             id: 5,
+//             name: "Tablet",
+//             brand: "Lenovo",
+//             color: "Blue",
+//             model: "Tab P11"
+//         }
+//         ];
+// const result=products.find(pd=>pd.id==3);
+// console.log(result);
+// const results=products.filter(pd=>pd.color=="Black");
+// console.log(...results);
+// const map=products.map(pd=>pd.id*3);
+// console.log(map);
+
+
+class Person {
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    introduce(){
+        console.log(`I am ${this.name}, and I am ${this.age} years old.`);
+    }
+}
+const person1 = new Person("Arafat", 25);
+
+person1.introduce();
