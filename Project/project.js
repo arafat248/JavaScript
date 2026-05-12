@@ -9,6 +9,7 @@ const displayProducts = product =>{
     const productcontainer = document.getElementById("product-container");
     product.forEach(element => {
         const div = document.createElement('div');
+        div.classList.add('card');
         div.innerHTML = `
         <img src="${element.image}" alt="${element.title}">
         <h4>${element.title}</h4>
