@@ -95,15 +95,26 @@
 // console.log(map);
 
 
-class Person {
-    constructor(name, age){
-        this.name = name;
-        this.age = age;
-    }
-    introduce(){
-        console.log(`I am ${this.name}, and I am ${this.age} years old.`);
-    }
-}
-const person1 = new Person("Arafat", 25);
+// class Person {
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     introduce(){
+//         console.log(`I am ${this.name}, and I am ${this.age} years old.`);
+//     }
+// }
+// const person1 = new Person("Arafat", 25);
+// person1.introduce();
 
-person1.introduce();
+const promise = new Promise((resolve, reject) => {
+    let success = true;
+    if(success){
+        resolve("Data loaded");
+    }else{
+        reject("Failed");
+    }
+});
+promise
+.then(res => console.log(res))
+.catch(err => console.log(err));
