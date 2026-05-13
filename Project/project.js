@@ -31,4 +31,4 @@ const HandleAddToCart = (title, price) => {
     console.log(title);
     cartmaincontainer.appendChild(div);
 };
-loadallProducts();
+loadallProducts(); 
