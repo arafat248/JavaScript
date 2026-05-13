@@ -1,7 +1,7 @@
 .main-container{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    
 }
 .cart-container{
     width: 50%;
@@ -22,4 +22,10 @@
 .card{
     border: 1px solid gray;
     padding: 10px;
+}
+.cart-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
 }

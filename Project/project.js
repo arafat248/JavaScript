@@ -15,9 +15,20 @@ const displayProducts = product =>{
         <h4>${element.title}</h4>
         <p>${element.description}</p>
         <button>Details</button>
-        <button> Add to Cart </button>
+        <button onclick="HandleAddToCart('${element.title}', ${element.price})"> Add to Cart </button>
         `;
         productcontainer.appendChild(div);
     });
 }
+const HandleAddToCart = (title, price) => {
+    const cartmaincontainer = document.getElementById("cart-main-container");
+    const div = document.createElement('div');
+    div.classList.add("cart-item");
+    div.innerHTML = `
+        <h4>${title}</h4>
+        <p>${price}</p>
+    `;
+    console.log(title);
+    cartmaincontainer.appendChild(div);
+};
 loadallProducts();
