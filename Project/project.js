@@ -24,6 +24,12 @@ const displayProducts = product =>{
     });
 }
 const HandleAddToCart = (title, price) => {
+    const cartcount = document.getElementById("count").innerText;
+    let convertedcount = parseInt(cartcount);
+        convertedcount = convertedcount + 1;
+        document.getElementById("count").innerText = convertedcount;
+    console.log(convertedcount);   
+
     const cartmaincontainer = document.getElementById("cart-main-container");
     const div = document.createElement('div');
     div.classList.add("cart-item");
